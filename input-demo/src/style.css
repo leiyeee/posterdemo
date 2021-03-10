@@ -1,0 +1,28 @@
+#test{
+  width:500px;
+  height:500px;
+  position:fixed;
+  bottom:10px;
+  right:10px;
+  background:black;
+  color:white;
+  padding:20px;
+  font-size:30px;
+}
+
+.myButton{
+  font-size:30px;
+  border-radius:10px;
+  border: none;
+  padding: 10px;
+  background: black;
+  color:white;
+}
+
+#nameInput{
+  color:red;
+}
+
+#nameInput::placeholder{
+  color:blue
+}
