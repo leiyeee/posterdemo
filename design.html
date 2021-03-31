@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>poster demon</title>
+    <link rel="stylesheet" href="./css/skin.css">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script> -->
+
+</head>
+
+<body>
+    <!-- partial:index.partial.html -->
+
+    <head>
+        <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+    </head>
+    <div class="other-main">
+        <form class="edit-panel">
+            <input name="line" type="text" placeholder="Title">
+            <div class="color-panel">
+                <h5>Title Color:</h5>
+                <div class="option-links">
+                    <a href="javascript:void(0)" id="setTitleC1">Color1</a>
+                    <a href="javascript:void(0)" id="setTitleC2">Color2</a>
+                    <a href="javascript:void(0)" id="setTitleC3">Color3</a>
+                    <a href="javascript:void(0)" id="setTitleC4">Color4</a>
+                </div>
+            </div>
+            <textarea name="body" type="text" placeholder="Body Copy" rows="5"></textarea>
+            <div class="color-panel">
+                <h5>Content Color:</h5>
+                <div class="option-links">
+                    <a href="javascript:void(0)" id="setContentC1">Color1</a>
+                    <a href="javascript:void(0)" id="setContentC2">Color2</a>
+                    <a href="javascript:void(0)" id="setContentC3">Color3</a>
+                    <a href="javascript:void(0)" id="setContentC4">Color4</a>
+                </div>
+            </div>
+            <div class="color-panel skin">
+                <h5>Skin Color:</h5>
+                <div class="option-links">
+                    <a href="javascript:void(0)" id="setSkinC1">Color1</a>
+                    <a href="javascript:void(0)" id="setSkinC2">Color2</a>
+                </div>
+            </div>
+            <input type="file" id="inputFile" style="display: none;"    />
+            <a id="down_upload" href="#" style="display: none">haha</a>
+            <h5 class="upload-title">Upload Image:</h5>
+            <button type="button" id="upload">
+                <span>Choose</span>
+            </button>
+            <row>
+                <input name="border" type="checkbox">
+                <label>Neon</label>
+            </row>
+            <row >
+                <label>Underline</label>
+                <input name="underline" type="checkbox">
+            </row>
+            <row>
+                <label>Center aligned</label>
+                <input name="center_aligned" type="checkbox">
+            </row>
+            <row>
+                <label>Letter spacing</label>
+                <input name="letter_spacing" type="checkbox">
+            </row>
+            <row>
+                <label>Strike</label>
+                <input name="strikethrough" type="checkbox">
+            </row>
+            <row>
+                <label>Tilt</label>
+                <input name="tilt" type="checkbox">
+            </row>
+            <row>
+                <label>Sprinkles</label>
+                <input name="sprinkles" type="checkbox">
+            </row>
+            <row>
+                <label>Circle</label>
+                <input name="circle" type="checkbox">
+            </row>
+            <row>
+                <label>Cross</label>
+                <input name="cross" type="checkbox">
+            </row>
+            <div id="new_poster" class="button" draggable='true'>Design</div>
+            <div id="createPoster" class="button" draggable='true'>Create Poster</div>
+        </form>
+            <div id="poster" class="viewing">
+    
+    
+                <h1 id="line"></h1>
+                <p id="body"></p>
+                <div id="border" class="border"></div>
+            </div>
+       
+    </div>
+    <script src='./js/jquery.js'></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.js"></script>
+    <script src="./js/index.js"></script>
+
+</body></html>
